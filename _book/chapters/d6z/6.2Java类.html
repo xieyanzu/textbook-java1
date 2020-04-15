@@ -1,0 +1,2167 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.2  Java类 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.3上机任务.html" />
+    
+    
+    <link rel="prev" href="6.1类和对象概述.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../d1z/d1z.html">
+            
+                <a href="../d1z/d1z.html">
+            
+                    
+                    第一章    初识java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../d1z/1.1计算机语言.html">
+            
+                <a href="../d1z/1.1计算机语言.html">
+            
+                    
+                    1.1  计算机语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../d1z/1.2java发展史.html">
+            
+                <a href="../d1z/1.2java发展史.html">
+            
+                    
+                    1.2  java发展史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../d1z/1.3Java的特点.html">
+            
+                <a href="../d1z/1.3Java的特点.html">
+            
+                    
+                    1.3  Java的特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../d1z/1.4Java程序工作原理.html">
+            
+                <a href="../d1z/1.4Java程序工作原理.html">
+            
+                    
+                    1.4  Java程序工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../d1z/1.5JavaSE的结构.html">
+            
+                <a href="../d1z/1.5JavaSE的结构.html">
+            
+                    
+                    1.5  Java SE的结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../d1z/1.6Java开发环境搭建.html">
+            
+                <a href="../d1z/1.6Java开发环境搭建.html">
+            
+                    
+                    1.6  Java开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../d1z/1.7第一个Java程序.html">
+            
+                <a href="../d1z/1.7第一个Java程序.html">
+            
+                    
+                    1.7  第一个Java程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../d1z/1.8上机任务.html">
+            
+                <a href="../d1z/1.8上机任务.html">
+            
+                    
+                    1.8  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../d1z/1.9上机任务.html">
+            
+                <a href="../d1z/1.9上机任务.html">
+            
+                    
+                    1.9  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../d1z/1.10本章练习.html">
+            
+                <a href="../d1z/1.10本章练习.html">
+            
+                    
+                    1.10  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../d2z/d2z.html">
+            
+                <a href="../d2z/d2z.html">
+            
+                    
+                    第二章    数据类型和运算符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../d2z/2.1标识符和关键字.html">
+            
+                <a href="../d2z/2.1标识符和关键字.html">
+            
+                    
+                    2.1  标识符和关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../d2z/2.2变量和常量.html">
+            
+                <a href="../d2z/2.2变量和常量.html">
+            
+                    
+                    2.2  变量和常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../d2z/2.3Java数据类型.html">
+            
+                <a href="../d2z/2.3Java数据类型.html">
+            
+                    
+                    2.3  Java数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../d2z/2.4成员变量和局部变量.html">
+            
+                <a href="../d2z/2.4成员变量和局部变量.html">
+            
+                    
+                    2.4  成员变量和局部变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../d2z/2.5上机任务.html">
+            
+                <a href="../d2z/2.5上机任务.html">
+            
+                    
+                    2.5  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../d2z/2.6Java运算符.html">
+            
+                <a href="../d2z/2.6Java运算符.html">
+            
+                    
+                    2.6  Java运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../d2z/2.7Java表达式.html">
+            
+                <a href="../d2z/2.7Java表达式.html">
+            
+                    
+                    2.7  Java表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../d2z/2.8上机任务.html">
+            
+                <a href="../d2z/2.8上机任务.html">
+            
+                    
+                    2.8  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../d2z/2.9上机任务.html">
+            
+                <a href="../d2z/2.9上机任务.html">
+            
+                    
+                    2.9  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../d2z/2.10本章练习.html">
+            
+                <a href="../d2z/2.10本章练习.html">
+            
+                    
+                    2.10  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../d3z/d3z.html">
+            
+                <a href="../d3z/d3z.html">
+            
+                    
+                    第三章    流程控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../d3z/3.1if语句.html">
+            
+                <a href="../d3z/3.1if语句.html">
+            
+                    
+                    3.1  if语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../d3z/3.2上机任务.html">
+            
+                <a href="../d3z/3.2上机任务.html">
+            
+                    
+                    3.2  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../d3z/3.3上机任务.html">
+            
+                <a href="../d3z/3.3上机任务.html">
+            
+                    
+                    3.3  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../d3z/3.4switch语句.html">
+            
+                <a href="../d3z/3.4switch语句.html">
+            
+                    
+                    3.4  switch语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../d3z/3.5上机任务.html">
+            
+                <a href="../d3z/3.5上机任务.html">
+            
+                    
+                    3.5  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../d3z/3.6循环语句.html">
+            
+                <a href="../d3z/3.6循环语句.html">
+            
+                    
+                    3.6  循环语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../d3z/3.7上机任务.html">
+            
+                <a href="../d3z/3.7上机任务.html">
+            
+                    
+                    3.7  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../d3z/3.8上机任务.html">
+            
+                <a href="../d3z/3.8上机任务.html">
+            
+                    
+                    3.8  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../d3z/3.9上机任务.html">
+            
+                <a href="../d3z/3.9上机任务.html">
+            
+                    
+                    3.9  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../d3z/3.10本章练习.html">
+            
+                <a href="../d3z/3.10本章练习.html">
+            
+                    
+                    3.10  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../d4z/d4z.html">
+            
+                <a href="../d4z/d4z.html">
+            
+                    
+                    第四章    方法与数组
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../d4z/4.1方法.html">
+            
+                <a href="../d4z/4.1方法.html">
+            
+                    
+                    4.1  方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../d4z/4.2上机任务.html">
+            
+                <a href="../d4z/4.2上机任务.html">
+            
+                    
+                    4.2  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../d4z/4.3数组.html">
+            
+                <a href="../d4z/4.3数组.html">
+            
+                    
+                    4.3  数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../d4z/4.4上机任务.html">
+            
+                <a href="../d4z/4.4上机任务.html">
+            
+                    
+                    4.4  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../d4z/4.5二维数组.html">
+            
+                <a href="../d4z/4.5二维数组.html">
+            
+                    
+                    4.5  二维数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../d4z/4.6上机任务.html">
+            
+                <a href="../d4z/4.6上机任务.html">
+            
+                    
+                    4.6  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../d4z/4.7上机任务.html">
+            
+                <a href="../d4z/4.7上机任务.html">
+            
+                    
+                    4.7  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../d4z/4.8本章练习.html">
+            
+                <a href="../d4z/4.8本章练习.html">
+            
+                    
+                    4.8  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../d5z/d5z.html">
+            
+                <a href="../d5z/d5z.html">
+            
+                    
+                    第五章    String字符串
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../d5z/5.1String类.html">
+            
+                <a href="../d5z/5.1String类.html">
+            
+                    
+                    5.1  String类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../d5z/5.2String类的常用方法.html">
+            
+                <a href="../d5z/5.2String类的常用方法.html">
+            
+                    
+                    5.2  String类的常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../d5z/5.3上机任务.html">
+            
+                <a href="../d5z/5.3上机任务.html">
+            
+                    
+                    5.3  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../d5z/5.4上机任务.html">
+            
+                <a href="../d5z/5.4上机任务.html">
+            
+                    
+                    5.4  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../d5z/5.5上机任务.html">
+            
+                <a href="../d5z/5.5上机任务.html">
+            
+                    
+                    5.5  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../d5z/5.6上机任务.html">
+            
+                <a href="../d5z/5.6上机任务.html">
+            
+                    
+                    5.6  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../d5z/5.7上机任务.html">
+            
+                <a href="../d5z/5.7上机任务.html">
+            
+                    
+                    5.7  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../d5z/5.8JavaAPI文档的使用.html">
+            
+                <a href="../d5z/5.8JavaAPI文档的使用.html">
+            
+                    
+                    5.8  Java API文档的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../d5z/5.9上机任务.html">
+            
+                <a href="../d5z/5.9上机任务.html">
+            
+                    
+                    5.9  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../d5z/5.10StringBuffer类.html">
+            
+                <a href="../d5z/5.10StringBuffer类.html">
+            
+                    
+                    5.10  StringBuffer类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../d5z/5.11本章练习.html">
+            
+                <a href="../d5z/5.11本章练习.html">
+            
+                    
+                    5.11  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="d6z.html">
+            
+                <a href="d6z.html">
+            
+                    
+                    第六章    类和对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1类和对象概述.html">
+            
+                <a href="6.1类和对象概述.html">
+            
+                    
+                    6.1  类和对象概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="6.2Java类.html">
+            
+                <a href="6.2Java类.html">
+            
+                    
+                    6.2  Java类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3上机任务.html">
+            
+                <a href="6.3上机任务.html">
+            
+                    
+                    6.3  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="6.4上机任务.html">
+            
+                <a href="6.4上机任务.html">
+            
+                    
+                    6.4  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="6.5构造方法.html">
+            
+                <a href="6.5构造方法.html">
+            
+                    
+                    6.5  构造方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="6.6上机任务.html">
+            
+                <a href="6.6上机任务.html">
+            
+                    
+                    6.6  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="6.7对象初始化过程.html">
+            
+                <a href="6.7对象初始化过程.html">
+            
+                    
+                    6.7  对象初始化过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="6.8重载.html">
+            
+                <a href="6.8重载.html">
+            
+                    
+                    6.8  重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="6.9上机任务.html">
+            
+                <a href="6.9上机任务.html">
+            
+                    
+                    6.9  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="6.10本章练习.html">
+            
+                <a href="6.10本章练习.html">
+            
+                    
+                    6.10  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../d7z/d7z.html">
+            
+                <a href="../d7z/d7z.html">
+            
+                    
+                    第七章    包和访问控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../d7z/7.1Java包.html">
+            
+                <a href="../d7z/7.1Java包.html">
+            
+                    
+                    7.1  Java包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../d7z/7.2引用包.html">
+            
+                <a href="../d7z/7.2引用包.html">
+            
+                    
+                    7.2  引用包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../d7z/7.3上机任务.html">
+            
+                <a href="../d7z/7.3上机任务.html">
+            
+                    
+                    7.3  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../d7z/7.4上机任务.html">
+            
+                <a href="../d7z/7.4上机任务.html">
+            
+                    
+                    7.4  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../d7z/7.5访问权限.html">
+            
+                <a href="../d7z/7.5访问权限.html">
+            
+                    
+                    7.5  访问权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../d7z/7.6static关键字.html">
+            
+                <a href="../d7z/7.6static关键字.html">
+            
+                    
+                    7.6  static关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../d7z/7.7上机任务.html">
+            
+                <a href="../d7z/7.7上机任务.html">
+            
+                    
+                    7.7  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../d7z/7.8本章练习.html">
+            
+                <a href="../d7z/7.8本章练习.html">
+            
+                    
+                    7.8  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../d8z/d8z.html">
+            
+                <a href="../d8z/d8z.html">
+            
+                    
+                    第八章    继承和多态
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../d8z/8.1抽象和封装.html">
+            
+                <a href="../d8z/8.1抽象和封装.html">
+            
+                    
+                    8.1  抽象和封装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../d8z/8.2上机任务.html">
+            
+                <a href="../d8z/8.2上机任务.html">
+            
+                    
+                    8.2  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../d8z/8.3继承.html">
+            
+                <a href="../d8z/8.3继承.html">
+            
+                    
+                    8.3  继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../d8z/8.4上机任务.html">
+            
+                <a href="../d8z/8.4上机任务.html">
+            
+                    
+                    8.4  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../d8z/8.5多态.html">
+            
+                <a href="../d8z/8.5多态.html">
+            
+                    
+                    8.5  多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../d8z/8.6上机任务.html">
+            
+                <a href="../d8z/8.6上机任务.html">
+            
+                    
+                    8.6  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../d8z/8.7本章练习.html">
+            
+                <a href="../d8z/8.7本章练习.html">
+            
+                    
+                    8.7  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../d9z/d9z.html">
+            
+                <a href="../d9z/d9z.html">
+            
+                    
+                    第九章    抽象类和接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../d9z/9.1抽象类.html">
+            
+                <a href="../d9z/9.1抽象类.html">
+            
+                    
+                    9.1  抽象类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../d9z/9.2上机任务.html">
+            
+                <a href="../d9z/9.2上机任务.html">
+            
+                    
+                    9.2  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../d9z/9.3接口.html">
+            
+                <a href="../d9z/9.3接口.html">
+            
+                    
+                    9.3  接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../d9z/9.4上机任务.html">
+            
+                <a href="../d9z/9.4上机任务.html">
+            
+                    
+                    9.4  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../d9z/9.5上机任务.html">
+            
+                <a href="../d9z/9.5上机任务.html">
+            
+                    
+                    9.5  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../d9z/9.6本章练习.html">
+            
+                <a href="../d9z/9.6本章练习.html">
+            
+                    
+                    9.6  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../d10z/d10z.html">
+            
+                <a href="../d10z/d10z.html">
+            
+                    
+                    第十章    排序算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../d10z/10.1排序算法.html">
+            
+                <a href="../d10z/10.1排序算法.html">
+            
+                    
+                    10.1  排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../d10z/10.2上机任务.html">
+            
+                <a href="../d10z/10.2上机任务.html">
+            
+                    
+                    10.2  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../d10z/10.3本章练习.html">
+            
+                <a href="../d10z/10.3本章练习.html">
+            
+                    
+                    10.3  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >6.2  Java类</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="62--java&#x7C7B;">6.2  Java&#x7C7B;</h2>
+<p>&#x2003;&#x2003;Java API&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x73B0;&#x6709;&#x7684;&#x7C7B;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x7C7B;&#x6765;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x4F8B;&#x5982;&#x7B2C;5&#x7AE0;&#x5B66;&#x4E60;&#x7684;String&#x7C7B;&#x3002;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x73B0;&#x6709;&#x7684;Java&#x7C7B;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x8FD8;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;Java&#x7C7B;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x4F1A;&#x8BE6;&#x7EC6;&#x5730;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#x548C;&#x4F7F;&#x7528;Java&#x7C7B;&#x3002;</p>
+<h3 id="621--java&#x7C7B;&#x7684;&#x5B9A;&#x4E49;">6.2.1  Java&#x7C7B;&#x7684;&#x5B9A;&#x4E49;</h3>
+<p>&#x2003;&#x2003;&#x5728;&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;Java&#x7A0B;&#x5E8F;&#x65F6;&#x5C31;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#xFF0C;&#x7C7B;&#x662F;Java&#x7A0B;&#x5E8F;&#x7684;&#x57FA;&#x672C;&#x5355;&#x5143;&#x3002;Java&#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#xFF0C;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x90FD;&#x662F;&#x7531;&#x7C7B;&#x7EC4;&#x7EC7;&#x8D77;&#x6765;&#x7684;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x3002;</p>
+<pre><code>public class &#x7C7B;&#x540D;&#xFF5B;
+
+    //&#x5B9A;&#x4E49;&#x7C7B;&#x5C5E;&#x6027;
+
+    &#x5C5E;&#x6027;1&#x7C7B;&#x578B;:&#x5C5E;&#x6027;1&#x540D;;
+
+    &#x5C5E;&#x6027;2&#x7C7B;&#x578B;:&#x5C5E;&#x6027;2&#x540D;;
+
+    &#x2026;
+
+    //&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;
+
+    &#x65B9;&#x6CD5;1&#x5B9A;&#x4E49;
+
+    &#x65B9;&#x6CD5;2&#x5B9A;&#x4E49;
+
+    &#x2026;
+
+&#xFF5D;
+</code></pre><p>&#x2003;&#x2003;&#x5728;Java&#x4E2D;&#xFF0C;class&#x662F;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x7C7B;&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF0C;class&#x5173;&#x952E;&#x5B57;&#x540E;&#x9762;&#x662F;&#x8981;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x7136;&#x540E;&#x6709;&#x4E00;&#x5BF9;&#x5927;&#x62EC;&#x53F7;&#xFF0C;&#x5927;&#x62EC;&#x53F7;&#x91CC;&#x5199;&#x7684;&#x662F;&#x7C7B;&#x7684;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x7C7B;&#x7684;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#x4E5F;&#x5206;&#x4E24;&#x90E8;&#x5206;&#xFF0C;&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#x662F;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#xFF0C;&#x5728;&#x524D;&#x9762;&#x7684;&#x8BFE;&#x7A0B;&#x4E2D;&#x5B66;&#x4E60;&#x8FC7;&#xFF0C;&#x5728;&#x7C7B;&#x5185;&#x90E8;&#x3001;&#x65B9;&#x6CD5;&#x5916;&#x90E8;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x79F0;&#x4E3A;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x91CC;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x5C31;&#x662F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x6982;&#x5FF5;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#x662F;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#xFF0C;&#x901A;&#x8FC7;&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x63CF;&#x8FF0;&#x7C7B;&#x5177;&#x6709;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x79F0;&#x4E3A;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x63A5;&#x4E0B;&#x6765;&#x901A;&#x8FC7;&#x5B9A;&#x4E49;&#x5B66;&#x751F;&#x7C7B;&#xFF0C;&#x719F;&#x6089;Java&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code>public class Student 
+
+{
+
+    String stuName;  //&#x5B66;&#x751F;&#x59D3;&#x540D;
+
+    int stuAge;      //&#x5B66;&#x751F;&#x5E74;&#x9F84;
+
+    int stuSex;      //&#x5B66;&#x751F;&#x6027;&#x522B;
+
+    int stuGrade;    //&#x5B66;&#x751F;&#x5E74;&#x7EA7;
+
+    //&#x5B9A;&#x4E49;&#x542C;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x76F4;&#x63A5;&#x8F93;&#x51FA;
+
+    public void learn()
+
+    {
+
+        System.out.println(stuName + &quot;&#x6B63;&#x5728;&#x8BA4;&#x771F;&#x542C;&#x8BFE;&#xFF01;&quot;);
+
+    }
+
+    //&#x5B9A;&#x4E49;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x5165;&#x65F6;&#x95F4;&#xFF0C;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;
+
+    public String doHomework(int hour)
+
+    {
+
+        return &quot;&#x73B0;&#x5728;&#x662F;&#x5317;&#x4EAC;&#x65F6;&#x95F4;:&quot; + hour + &quot;&#x70B9;&#xFF0C;&quot; + stuName + &quot; &#x6B63;&#x5728;&#x5199;&#x4F5C;&#x4E1A;&#xFF01;&quot;;
+
+    }
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x91CC;&#x9762;&#x6CA1;&#x6709;main&#x65B9;&#x6CD5;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x80FD;&#x7F16;&#x8BD1;&#xFF0C;&#x4E0D;&#x80FD;&#x8FD0;&#x884C;&#x3002;</p>
+<h3 id="622--java&#x7C7B;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x4F7F;&#x7528;">6.2.2  Java&#x7C7B;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x4F7F;&#x7528;</h3>
+<p>&#x2003;&#x2003;&#x5B9A;&#x4E49;&#x597D;Student&#x7C7B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x7C7B;&#x521B;&#x5EFA;&#xFF08;&#x5B9E;&#x4F8B;&#x5316;&#xFF09;&#x5BF9;&#x8C61;&#x4E86;&#x3002;&#x7C7B;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>&#x7C7B;&#x540D; &#x5BF9;&#x8C61;&#x540D; = new &#x7C7B;&#x540D;();
+</code></pre><p>&#x2003;&#x2003;&#x5728;&#x5B66;&#x4E60;&#x4F7F;&#x7528;String&#x7C7B;&#x521B;&#x5EFA;String&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x5176;&#x5B9E;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x4E86;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x5927;&#x5BB6;&#x5BF9;&#x8FD9;&#x6837;&#x7684;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x5E76;&#x4E0D;&#x964C;&#x751F;&#x3002;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x8981;&#x4F7F;&#x7528;new&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x540E;&#x9762;&#x8981;&#x8DDF;&#x7740;&#x7C7B;&#x540D;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x6839;&#x636E;&#x4E0A;&#x9762;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x521B;&#x5EFA;&#x738B;&#x4E91;&#x8FD9;&#x4E2A;&#x5B66;&#x751F;&#x5BF9;&#x8C61;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>Student wangYun = new Student();
+</code></pre><p>&#x2003;&#x2003;&#x8FD9;&#x91CC;&#xFF0C;&#x53EA;&#x521B;&#x5EFA;&#x4E86;wangYun&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x5BF9;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#xFF0C;&#x8003;&#x8651;&#x5230;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x5E38;&#x5728;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x540E;&#x7ED9;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#x3002;&#x5728;Java&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x201C;.&#x201D;&#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x5F15;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>&#x5BF9;&#x8C61;&#x540D;.&#x5C5E;&#x6027;;
+
+&#x5BF9;&#x8C61;&#x540D;.&#x65B9;&#x6CD5;;
+</code></pre><p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED9;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x66F4;&#x6539;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x6216;&#x8005;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>wangYun.stuName =&quot;&#x738B;&#x4E91;&quot;;
+
+wangYun.stuAge = 22;
+
+wangYun.stuSex = 1;                      //1&#x4EE3;&#x8868;&#x7537;&#xFF0C;2&#x4EE3;&#x8868;&#x5973;
+
+wangYun.stuGrade = 4;                  //4&#x4EE3;&#x8868;&#x5927;&#x5B66;&#x56DB;&#x5E74;&#x7EA7;
+
+wangYun.learn();                            //&#x8C03;&#x7528;&#x5B66;&#x751F;&#x542C;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;
+
+wangYun.doHomework(22);          //&#x8C03;&#x7528;&#x5B66;&#x751F;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x5165;&#x503C;22&#x4EE3;&#x8868;&#x73B0;&#x5728;&#x662F;22&#x70B9;
+
+&#x200B;                                              //&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;String&#x7C7B;&#x578B;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+</code></pre><p>&#x2003;&#x2003;&#x63A5;&#x4E0B;&#x6765;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x7C7B;TestStudent&#xFF08;&#x8FD9;&#x4E2A;&#x6D4B;&#x8BD5;&#x7C7B;&#x9700;&#x8981;&#x548C;&#x4E4B;&#x524D;&#x7F16;&#x8BD1;&#x8FC7;&#x7684;Student&#x7C7B;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF09;&#xFF0C;&#x6765;&#x6D4B;&#x8BD5;Student&#x7C7B;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x4F7F;&#x7528;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code>public class TestStudent
+
+{
+
+    public static void main(String[] args) 
+
+    {
+
+        Student wangYun = new Student();                  //&#x521B;&#x5EFA;wangYun&#x5B66;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;
+
+        wangYun.stuName = &quot;&#x738B;&#x4E91;&quot;;
+
+        wangYun.stuAge = 22;
+
+        wangYun.stuSex = 1;                                        //1&#x4EE3;&#x8868;&#x7537;&#xFF0C;2&#x4EE3;&#x8868;&#x5973;
+
+        wangYun.stuGrade = 4;                                    //4&#x4EE3;&#x8868;&#x5927;&#x5B66;&#x56DB;&#x5E74;&#x7EA7;
+
+        wangYun.learn();                                              //&#x8C03;&#x7528;&#x5B66;&#x751F;&#x542C;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;
+
+        String rstString = wangYun.doHomework(22);  //&#x8C03;&#x7528;&#x5B66;&#x751F;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x5165;&#x503C;22&#x4EE3;&#x8868;&#x73B0;&#x5728;&#x662F;22&#x70B9;
+
+        System.out.println(rstString);
+
+    }
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x5E76;&#x8FD0;&#x884C;&#x8BE5;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;6.3&#x6240;&#x793A;&#x3002;</p>
+<p align="center"><img src="../../img/d6z/tu6.3.png"></p>
+<p align="center">&#x56FE;6.3  &#x521B;&#x5EFA;&#x548C;&#x4F7F;&#x7528;Student&#x7C7B;</p>  
+
+<p>&#x2003;&#x2003;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x867D;&#x7136;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x4F46;&#x5374;&#x662F;&#x6211;&#x4EEC;&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x7C7B;&#x5B8C;&#x6210;&#x7684;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x3002;&#x5176;&#x4E2D;TestStudent&#x7C7B;&#x662F;&#x6D4B;&#x8BD5;&#x7C7B;&#xFF0C;&#x6D4B;&#x8BD5;&#x7C7B;&#x4E2D;&#x5305;&#x542B;main&#x65B9;&#x6CD5;&#xFF0C;&#x63D0;&#x4F9B;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7684;&#x5165;&#x53E3;&#x3002;&#x5728;main&#x65B9;&#x6CD5;&#x5185;&#xFF0C;&#x521B;&#x5EFA;Student&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x5E76;&#x7ED9;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x6709;&#x4E24;&#x4E2A;Java&#x6587;&#x4EF6;&#xFF0C;&#x6BCF;&#x4E2A;Java&#x6587;&#x4EF6;&#x4E2D;&#x7F16;&#x5199;&#x4E86;&#x4E00;&#x4E2A;Java&#x7C7B;&#xFF0C;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#x540E;&#x5F62;&#x6210;2&#x4E2A;class&#x6587;&#x4EF6;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x4E24;&#x4E2A;Java&#x7C7B;&#x5199;&#x5728;&#x4E00;&#x4E2A;Java&#x6587;&#x4EF6;&#x91CC;&#xFF0C;&#x4F46;&#x5176;&#x4E2D;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x7C7B;&#x7528;public&#x4FEE;&#x9970;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;Java&#x6587;&#x4EF6;&#x7684;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x7528;&#x8FD9;&#x4E2A;public&#x7C7B;&#x7684;&#x7C7B;&#x540D;&#x547D;&#x540D;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>
+public class TestStudent
+
+{
+
+    public static void main(String[] args) 
+
+    {
+
+        Student wangYun = new Student();                  //&#x521B;&#x5EFA;wangYun&#x5B66;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;
+
+        wangYun.stuName = &quot;&#x738B;&#x4E91;&quot;;
+
+        wangYun.stuAge = 22;
+
+        wangYun.stuSex = 1;                                        //1&#x4EE3;&#x8868;&#x7537;&#xFF0C;2&#x4EE3;&#x8868;&#x5973;
+
+        wangYun.stuGrade = 4;                                    //4&#x4EE3;&#x8868;&#x5927;&#x5B66;&#x56DB;&#x5E74;&#x7EA7;
+
+        wangYun.learn();                                              //&#x8C03;&#x7528;&#x5B66;&#x751F;&#x542C;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;
+
+        String rstString = wangYun.doHomework(22);  //&#x8C03;&#x7528;&#x5B66;&#x751F;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x5165;&#x503C;22&#x4EE3;&#x8868;&#x73B0;&#x5728;&#x662F;22&#x70B9;
+
+        System.out.println(rstString);
+
+    }
+
+}
+
+class Student                                                                       //&#x4E0D;&#x80FD;&#x4F7F;&#x7528;public&#x4FEE;&#x9970;
+
+{
+
+    String stuName;                                                        //&#x5B66;&#x751F;&#x59D3;&#x540D;
+
+    int stuAge;                                                            //&#x5B66;&#x751F;&#x5E74;&#x9F84;
+
+    int stuSex;                                                             //&#x5B66;&#x751F;&#x6027;&#x522B;
+
+    int stuGrade;                                                           //&#x5B66;&#x751F;&#x5E74;&#x7EA7;
+
+    //&#x5B9A;&#x4E49;&#x542C;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x76F4;&#x63A5;&#x8F93;&#x51FA;
+
+    public void learn()
+
+    {
+
+        System.out.println(stuName + &quot;&#x6B63;&#x5728;&#x8BA4;&#x771F;&#x542C;&#x8BFE;&#xFF01;&quot;);
+
+    }
+
+    //&#x5B9A;&#x4E49;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x5165;&#x65F6;&#x95F4;&#xFF0C;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;
+
+    public String doHomework(int hour)
+
+    {
+
+        return &quot;&#x73B0;&#x5728;&#x662F;&#x5317;&#x4EAC;&#x65F6;&#x95F4;:&quot; + hour + &quot;&#x70B9;&#xFF0C;&quot; + stuName + &quot; &#x6B63;&#x5728;&#x5199;&#x4F5C;&#x4E1A;&#xFF01;&quot;;
+
+    }
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5BF9;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x90FD;&#x662F;&#x5148;&#x8D4B;&#x503C;&#x540E;&#x518D;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8D4B;&#x503C;&#x5C31;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x4F1A;&#x6709;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x7ED3;&#x679C;&#x5462;&#xFF1F;</p>
+<p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x5C06;TestStudent&#x6D4B;&#x8BD5;&#x7C7B;&#x7684;&#x4EE3;&#x7801;&#x4FEE;&#x6539;&#x6210;&#x5982;&#x4E0B;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<pre><code>public class TestStudent
+
+{
+
+    public static void main(String[] args) 
+
+    {
+
+        Student wangYun = new Student();                           //&#x521B;&#x5EFA;wangYun&#x5B66;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;
+
+        System.out.println(&quot;&#x672A;&#x8D4B;&#x503C;&#x524D;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;&#x4E3A;&#xFF1A;&quot; + wangYun.stuName);
+
+        System.out.println(&quot;&#x672A;&#x8D4B;&#x503C;&#x524D;&#x7684;&#x5B66;&#x751F;&#x5E74;&#x9F84;&#x4E3A;&#xFF1A;&quot; + wangYun.stuAge);
+
+        System.out.println(&quot;&#x672A;&#x8D4B;&#x503C;&#x524D;&#x7684;&#x5B66;&#x751F;&#x6027;&#x522B;&#x6570;&#x503C;&#x4E3A;&#xFF1A;&quot; + wangYun.stuSex);
+
+        System.out.println(&quot;&#x672A;&#x8D4B;&#x503C;&#x524D;&#x7684;&#x5B66;&#x751F;&#x5E74;&#x7EA7;&#x4E3A;&#xFF1A;&quot; + wangYun.stuGrade);
+
+        //&#x7ED9;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x8D4B;&#x503C;
+
+        wangYun.stuName = &quot;&#x738B;&#x4E91;&quot;;
+
+        wangYun.stuAge = 22;
+
+        wangYun.stuSex = 1;                                                 //1&#x4EE3;&#x8868;&#x7537;&#xFF0C;2&#x4EE3;&#x8868;&#x5973;
+
+        wangYun.stuGrade = 4;                                             //4&#x4EE3;&#x8868;&#x5927;&#x5B66;&#x56DB;&#x5E74;&#x7EA7;
+
+        System.out.println(&quot;&#x8D4B;&#x503C;&#x540E;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;&#x4E3A;&#xFF1A;&quot; + wangYun.stuName);
+
+        System.out.println(&quot;&#x8D4B;&#x503C;&#x540E;&#x7684;&#x5B66;&#x751F;&#x5E74;&#x9F84;&#x4E3A;&#xFF1A;&quot; + wangYun.stuAge);
+
+        System.out.println(&quot;&#x8D4B;&#x503C;&#x540E;&#x7684;&#x5B66;&#x751F;&#x6027;&#x522B;&#x6570;&#x503C;&#x4E3A;&#xFF1A;&quot; + wangYun.stuSex);
+
+        System.out.println(&quot;&#x8D4B;&#x503C;&#x540E;&#x7684;&#x5B66;&#x751F;&#x5E74;&#x7EA7;&#x4E3A;&#xFF1A;&quot; + wangYun.stuGrade);
+
+    }
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;6.4&#x6240;&#x793A;&#x3002;</p>
+<p align="center"><img src="../../img/d6z/tu6.4.png"></p>
+<p align="center">&#x56FE;6.4  &#x672A;&#x8D4B;&#x503C;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x7684;&#x503C;</p>  
+
+<p>&#x2003;&#x2003;&#x4ECE;&#x56FE;6.4&#x6240;&#x793A;&#x7684;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x5728;&#x672A;&#x7ED9;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#x524D;&#x4F7F;&#x7528;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x5C5E;&#x6027;&#x4E3A;&#x5F15;&#x7528;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x5176;&#x521D;&#x59CB;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;null&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x5C5E;&#x6027;&#x662F;int&#x578B;&#xFF0C;&#x5176;&#x521D;&#x59CB;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0&#x3002;</p>
+<h3 id="623--java&#x7C7B;&#x7684;&#x7B80;&#x5355;&#x8FD0;&#x7528;">6.2.3  Java&#x7C7B;&#x7684;&#x7B80;&#x5355;&#x8FD0;&#x7528;</h3>
+<p>&#x2003;&#x2003;&#x5728;&#x4E0A;&#x4E00;&#x5C0F;&#x8282;&#x4E2D;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;Student&#x7C7B;&#x540E;&#xFF0C;&#x4F7F;&#x7528;TestStudent&#x6D4B;&#x8BD5;&#x7C7B;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;Student&#x7C7B;&#x7684;&#x5BF9;&#x8C61;wangYun&#xFF0C;&#x7136;&#x540E;&#x7ED9;wangYun&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#x5E76;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x518D;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x8001;&#x5E08;&#x7C7B;Teacher&#xFF0C;Teacher&#x7C7B;&#x5177;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x5982;&#x56FE;6.5&#x6240;&#x793A;&#x3002;</p>
+<p align="center"><img src="../../img/d6z/tu6.5.png"></p>
+<p align="center">&#x56FE;6.5  &#x8001;&#x5E08;&#x7C7B;</p>  
+&#x2003;&#x2003;&#x4E0B;&#x9762;&#x5C06;&#x65B0;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;TestStuTea&#x7C7B;&#xFF0C;&#x7528;&#x4E8E;&#x7EC4;&#x7EC7;&#x8FD9;&#x4E2A;&#x65B0;&#x7A0B;&#x5E8F;&#x7684;&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;&#x3002;&#x8BE5;&#x7A0B;&#x5E8F;&#x4E2D;&#x5305;&#x542B;2&#x4E2A;&#x8001;&#x5E08;&#x5BF9;&#x8C61;&#xFF08;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x5982;&#x8868;6.1&#x6240;&#x793A;&#xFF09;&#x548C;4&#x4E2A;&#x5B66;&#x751F;&#x5BF9;&#x8C61;&#xFF08;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x5982;&#x8868;6.2&#x6240;&#x793A;&#xFF09;&#x3002;
+
+<p align="center">&#x8868;6.1  &#x8001;&#x5E08;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x8868;</p>  
+
+
+<table>
+<thead>
+<tr>
+<th>&#x59D3;&#x540D;</th>
+<th>&#x4E13;&#x4E1A;</th>
+<th>&#x8BFE;&#x7A0B;</th>
+<th>&#x6559;&#x9F84;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x848B;&#x6DB5;</td>
+<td>&#x8BA1;&#x7B97;&#x673A;&#x5E94;&#x7528;</td>
+<td>Java&#x57FA;&#x7840;</td>
+<td>5</td>
+</tr>
+<tr>
+<td>&#x7530;&#x658C;</td>
+<td>&#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;</td>
+<td>&#x524D;&#x7AEF;&#x6280;&#x672F;</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p align="center">&#x8868;6.2  &#x5B66;&#x751F;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x8868;</p>  
+
+<table>
+<thead>
+<tr>
+<th>&#x59D3;&#x540D;</th>
+<th>&#x5E74;&#x9F84;</th>
+<th>&#x6027;&#x522B;</th>
+<th>&#x5E74;&#x7EA7;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x738B;&#x4E91;</td>
+<td>22</td>
+<td>&#x7537;</td>
+<td>4</td>
+</tr>
+<tr>
+<td>&#x5218;&#x9759;&#x6D9B;</td>
+<td>21</td>
+<td>&#x5973;</td>
+<td>3</td>
+</tr>
+<tr>
+<td>&#x5357;&#x5929;&#x534E;</td>
+<td>20</td>
+<td>&#x7537;</td>
+<td>3</td>
+</tr>
+<tr>
+<td>&#x96F7;&#x9759;</td>
+<td>22</td>
+<td>&#x5973;</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x8981;&#x5B8C;&#x6210;&#x7684;&#x529F;&#x80FD;&#x63CF;&#x8FF0;&#x5982;&#x4E0B;&#x3002;</p>
+<p>&#x2003;&#x2003;&#xFF08;1&#xFF09;&#x5728;&#x7A0B;&#x5E8F;&#x5F00;&#x59CB;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x4F9D;&#x6B21;&#x8F93;&#x5165;&#x6240;&#x6709;&#x8001;&#x5E08;&#x548C;&#x5B66;&#x751F;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x2003;&#x2003;&#xFF08;2&#xFF09;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x5165;&#x5B8C;&#x6BD5;&#x8FD9;&#x4E9B;&#x8001;&#x5E08;&#x548C;&#x5B66;&#x751F;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x540E;&#xFF0C;&#x8C03;&#x7528;&#x7B2C;&#x4E00;&#x4E2A;&#x8001;&#x5E08;&#x8BB2;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;&#x201C;**&#xFF08;&#x8BE5;&#x8001;&#x5E08;&#x7684;&#x59D3;&#x540D;&#xFF09;&#x8001;&#x5E08;&#x6B63;&#x5728;&#x8F9B;&#x82E6;&#x8BB2;**&#xFF08;&#x8BE5;&#x8001;&#x5E08;&#x6240;&#x6388;&#x8BFE;&#x7A0B;&#xFF09;&#x8BFE;&#x7A0B;&#x201D;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x2003;&#x2003;&#xFF08;3&#xFF09;&#x4F9D;&#x6B21;&#x8C03;&#x7528;&#x6240;&#x6709;&#x5B66;&#x751F;&#x542C;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;&#x201C;**&#xFF08;&#x8BE5;&#x5B66;&#x751F;&#x59D3;&#x540D;&#xFF09;&#x5B66;&#x751F;&#x6B63;&#x5728;&#x8BA4;&#x771F;&#x542C;&#x8BFE;&#xFF01;&#x201D;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x2003;&#x2003;&#xFF08;4&#xFF09;&#x4F9D;&#x6B21;&#x8C03;&#x7528;&#x6240;&#x6709;&#x5B66;&#x751F;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x201C;&#x73B0;&#x5728;&#x662F;&#x5317;&#x4EAC;&#x65F6;&#x95F4;&#xFF1A;20&#x70B9;&#xFF0C;**&#xFF08;&#x8BE5;&#x5B66;&#x751F;&#x59D3;&#x540D;&#xFF09;&#x6B63;&#x5728;&#x5199;&#x4F5C;&#x4E1A;&#xFF01;&#x201D;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5176;&#x4E2D;20&#x662F;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x3002;</p>
+<p>&#x2003;&#x2003;&#xFF08;5&#xFF09;&#x8C03;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#x8001;&#x5E08;&#x6279;&#x6539;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F9D;&#x6B21;&#x6279;&#x6539;&#x6240;&#x6709;&#x5B66;&#x751F;&#x7684;&#x4F5C;&#x4E1A;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;&#x201C;&#x8BB2;&#x6388;**&#xFF08;&#x8BE5;&#x8001;&#x5E08;&#x6240;&#x6388;&#x8BFE;&#x7A0B;&#xFF09;&#x8BFE;&#x7A0B;&#x7684;&#x8001;&#x5E08;**&#xFF08;&#x8BE5;&#x8001;&#x5E08;&#x59D3;&#x540D;&#xFF09;&#x5DF2;&#x7ECF;&#x6279;&#x6539;&#x5B8C;&#x6BD5;&#xFF1A;**&#xFF08;&#x8BE5;&#x5B66;&#x751F;&#x59D3;&#x540D;&#xFF09;&#x7684;&#x4F5C;&#x4E1A;&#xFF01;&#x201D;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;6.6&#x6240;&#x793A;&#x3002;</p>
+<p align="center"><img src="../../img/d6z/tu6.6.png"></p>
+<p align="center">&#x56FE;6.6  Java&#x7C7B;&#x7684;&#x7B80;&#x5355;&#x8FD0;&#x7528;</p>      
+
+<p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x5176;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5206;&#x522B;&#x5B58;&#x653E;&#x4E86;2&#x4E2A;&#x8001;&#x5E08;&#x5BF9;&#x8C61;&#x548C;4&#x4E2A;&#x5B66;&#x751F;&#x5BF9;&#x8C61;&#xFF0C;&#x4F7F;&#x7528;&#x5FAA;&#x73AF;&#x548C;&#x65B9;&#x6CD5;createTeacher()&#x3001;createStudent()&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x5E76;&#x7ED9;&#x5BF9;&#x8C61;&#x8D4B;&#x503C;&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x4F7F;&#x7528;&#x5FAA;&#x73AF;&#x5E76;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x65B9;&#x6CD5;&#x6309;&#x8981;&#x6C42;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x3002;</p>
+<pre><code>import java.util.Scanner;
+
+public class TestStuTea
+
+{
+
+    static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) 
+
+    {
+
+        Teacher[] tea = new Teacher[2];     //&#x521B;&#x5EFA;&#x957F;&#x5EA6;&#x4E3A;2&#x7684;&#x6570;&#x7EC4;tea&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x653E;2&#x4E2A;&#x8001;&#x5E08;&#x5BF9;&#x8C61;
+
+        Student[] stu = new Student[4];      //&#x521B;&#x5EFA;&#x957F;&#x5EA6;&#x4E3A;4&#x7684;&#x6570;&#x7EC4;stu&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x653E;4&#x4E2A;&#x5B66;&#x751F;&#x5BF9;&#x8C61;
+
+        for(int i = 0;i &lt; tea.length;i++)
+
+        {
+
+            System.out.println(&quot;&#x8BF7;&#x521B;&#x5EFA;&#x5E76;&#x8F93;&#x5165;&#x7B2C;&quot; + (i+1) + &quot;&#x4E2A;&#x8001;&#x5E08;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#xFF1A;&quot;);
+
+            tea[i] = createTeacher();         //&#x8C03;&#x7528;createTeacher&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x7B2C;i+1&#x4E2A;&#x8001;&#x5E08;&#x5BF9;&#x8C61;&#x5E76;&#x8D4B;&#x503C;
+
+        }
+
+        for(int j = 0;j &lt; stu.length;j++)
+
+        {
+
+            System.out.println(&quot;&#x8BF7;&#x521B;&#x5EFA;&#x5E76;&#x8F93;&#x5165;&#x7B2C;&quot; + (j+1) + &quot;&#x4E2A;&#x5B66;&#x751F;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#xFF1A;&quot;);
+
+            stu[j] = createStudent();         //&#x8C03;&#x7528;createStudent&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x7B2C;j+1&#x4E2A;&#x5B66;&#x751F;&#x5BF9;&#x8C61;&#x5E76;&#x8D4B;&#x503C;
+
+        }
+
+        //&#x8C03;&#x7528;&#x7B2C;&#x4E00;&#x4E2A;&#x8001;&#x5E08;&#x8BB2;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;
+
+        tea[0].teach();
+
+        //&#x4F9D;&#x6B21;&#x8C03;&#x7528;&#x6240;&#x6709;&#x5B66;&#x751F;&#x542C;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;
+
+        for(int j = 0;j &lt; stu.length;j++)
+
+        {
+
+            stu[j].learn();
+
+        }
+
+        //&#x4F9D;&#x6B21;&#x8C03;&#x7528;&#x6240;&#x6709;&#x5B66;&#x751F;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;
+
+        for(int j = 0;j &lt; stu.length;j++)
+
+        {
+
+            String tempStr = stu[j].doHomework(20);        //&#x5176;&#x4E2D;20&#x662F;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#x7684;
+
+            System.out.println(tempStr);
+
+        }
+
+        for(int j = 0;j &lt; stu.length;j++)
+
+        {
+
+            //&#x8C03;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#x8001;&#x5E08;&#x6279;&#x6539;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F9D;&#x6B21;&#x6279;&#x6539;&#x6240;&#x6709;&#x5B66;&#x751F;&#x7684;&#x4F5C;&#x4E1A;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;
+
+            tea[1].checkHomework(stu[j]);
+
+        }
+
+    }
+
+    //&#x521B;&#x5EFA;&#x8001;&#x5E08;&#x5BF9;&#x8C61;&#x5E76;&#x8D4B;&#x503C;
+
+    public static Teacher createTeacher() 
+
+    {
+
+        Teacher tea = new Teacher();
+
+        System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x8001;&#x5E08;&#x59D3;&#x540D;&#xFF1A;&quot;);
+
+        tea.teaName = input.next();
+
+        System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x8001;&#x5E08;&#x4E13;&#x4E1A;&#xFF1A;&quot;);
+
+        tea.teaSpecialty = input.next();
+
+        System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x8001;&#x5E08;&#x6240;&#x8BB2;&#x6388;&#x7684;&#x8BFE;&#x7A0B;&#xFF1A;&quot;);
+
+        tea.teaCourse = input.next();
+
+        System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x8001;&#x5E08;&#x6559;&#x9F84;&#xFF1A;&quot;);
+
+        tea.teaYears = input.nextInt();
+
+        return tea;
+
+    }
+
+    //&#x521B;&#x5EFA;&#x5B66;&#x751F;&#x5BF9;&#x8C61;&#x5E76;&#x8D4B;&#x503C;
+
+    public static Student createStudent() 
+
+    {
+
+        Student stu = new Student();
+
+        System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x5B66;&#x751F;&#x59D3;&#x540D;&#xFF1A;&quot;);
+
+        stu.stuName = input.next();
+
+        System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x5B66;&#x751F;&#x5E74;&#x9F84;&#xFF1A;&quot;);
+
+        stu.stuAge = input.nextInt();
+
+        System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x5B66;&#x751F;&#x6027;&#x522B;&#x6570;&#x503C;&#xFF08;1&#x4EE3;&#x8868;&#x7537;&#x3001;2&#x4EE3;&#x8868;&#x5973;&#xFF09;&#xFF1A;&quot;);
+
+        stu.stuSex = input.nextInt();
+
+        System.out.print(&quot;&#x8BF7;&#x8F93;&#x5165;&#x5B66;&#x751F;&#x5E74;&#x7EA7;&#xFF1A;&quot;);
+
+        stu.stuGrade = input.nextInt();
+
+        return stu;
+
+    }
+
+}
+
+class Teacher                                 //&#x4E0D;&#x80FD;&#x4F7F;&#x7528;public&#x4FEE;&#x9970;
+
+{
+
+    String teaName;              //&#x8001;&#x5E08;&#x59D3;&#x540D;
+
+    String teaSpecialty;              //&#x8001;&#x5E08;&#x4E13;&#x4E1A;
+
+    String teaCourse;              //&#x8001;&#x5E08;&#x6240;&#x8BB2;&#x6388;&#x7684;&#x8BFE;&#x7A0B;
+
+    int teaYears;                  //&#x8001;&#x5E08;&#x6559;&#x9F84;
+
+    //&#x5B9A;&#x4E49;&#x8BB2;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x76F4;&#x63A5;&#x8F93;&#x51FA;
+
+    public void teach()
+
+    {
+
+        System.out.println(teaName + &quot;&#x6B63;&#x5728;&#x8F9B;&#x82E6;&#x8BB2;&#xFF1A;&quot; + teaCourse + &quot; &#x8BFE;&#x7A0B;&#xFF01;&quot;);
+
+    }
+
+    //&#x5B9A;&#x4E49;&#x6279;&#x6539;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x5165;&#x503C;&#x4E3A;&#x4E00;&#x4E2A;&#x5B66;&#x751F;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#x7ED3;&#x679C;
+
+    public void checkHomework(Student stu)
+
+    {
+
+        System.out.println(&quot;&#x8BB2;&#x6388;&#xFF1A;&quot; + teaCourse + &quot; &#x8BFE;&#x7A0B;&#x7684;&#x8001;&#x5E08;&#xFF1A;&quot; + teaName + &quot; &#x5DF2;&#x7ECF;&#x6279;&#x6539;&#x5B8C;&#x6BD5;&#xFF1A;
+
+        &quot; + stu.stuName +&quot; &#x7684;&#x4F5C;&#x4E1A;&#xFF01;&quot;);
+
+    }
+
+}
+
+class Student                                  //&#x4E0D;&#x80FD;&#x4F7F;&#x7528;public&#x4FEE;&#x9970;
+
+{
+
+    String stuName;                  //&#x5B66;&#x751F;&#x59D3;&#x540D;
+
+    int stuAge;                       //&#x5B66;&#x751F;&#x5E74;&#x9F84;
+
+    int stuSex;                       //&#x5B66;&#x751F;&#x6027;&#x522B;
+
+    int stuGrade;                      //&#x5B66;&#x751F;&#x5E74;&#x7EA7;
+
+    //&#x5B9A;&#x4E49;&#x542C;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x76F4;&#x63A5;&#x8F93;&#x51FA;
+
+    public void learn()
+
+    {
+
+        System.out.println(stuName + &quot;&#x6B63;&#x5728;&#x8BA4;&#x771F;&#x542C;&#x8BFE;&#xFF01;&quot;);
+
+    }
+
+    //&#x5B9A;&#x4E49;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x5165;&#x65F6;&#x95F4;&#xFF0C;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;
+
+    public String doHomework(int hour)
+
+    {
+
+        return &quot;&#x73B0;&#x5728;&#x662F;&#x5317;&#x4EAC;&#x65F6;&#x95F4;:&quot; + hour + &quot;&#x70B9;&#xFF0C;&quot; + stuName + &quot; &#x6B63;&#x5728;&#x5199;&#x4F5C;&#x4E1A;&#xFF01;&quot;;
+
+    }
+
+}
+</code></pre><h3 id="624--&#x5C01;&#x88C5;">6.2.4  &#x5C01;&#x88C5;</h3>
+<p>&#x2003;&#x2003;&#x5728;&#x4F01;&#x4E1A;&#x9762;&#x8BD5;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x7ECF;&#x5E38;&#x4F1A;&#x88AB;&#x95EE;&#x5230;&#xFF0C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x6709;&#x54EA;&#x4E9B;&#x57FA;&#x672C;&#x7279;&#x6027;&#xFF1F;&#x7B54;&#x6848;&#x5E94;&#x8BE5;&#x662F;&#xFF1A;&#x5C01;&#x88C5;&#x3001;&#x7EE7;&#x627F;&#x548C;&#x591A;&#x6001;&#x3002;&#x5982;&#x679C;&#x8981;&#x6C42;4&#x4E2A;&#x7B54;&#x6848;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x3002;&#x7EE7;&#x627F;&#x548C;&#x591A;&#x6001;&#x5728;&#x540E;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x4F1A;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#xFF0C;&#x8FD9;&#x91CC;&#x7ED9;&#x8BFB;&#x8005;&#x7B80;&#x8981;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x5C01;&#x88C5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5C01;&#x88C5;&#x5C31;&#x662F;&#x5C06;&#x62BD;&#x8C61;&#x5F97;&#x5230;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x884C;&#x4E3A;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x6709;&#x673A;&#x7684;&#x6574;&#x4F53;&#xFF0C;&#x5C31;&#x662F;&#x7C7B;&#x3002;&#x7C7B;&#x91CC;&#x9762;&#x7684;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF08;&#x5C24;&#x5176;&#x662F;&#x5C5E;&#x6027;&#xFF09;&#xFF0C;&#x9700;&#x8981;&#x9690;&#x85CF;&#x8D77;&#x6765;&#xFF0C;&#x4E0D;&#x5E0C;&#x671B;&#x76F4;&#x63A5;&#x5BF9;&#x5916;&#x516C;&#x5F00;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x4F9B;&#x5916;&#x90E8;&#x8BBF;&#x95EE;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x8BBF;&#x95EE;&#x8FD9;&#x4E9B;&#x9700;&#x8981;&#x9690;&#x85CF;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5C01;&#x88C5;&#x7684;&#x76EE;&#x7684;&#x662F;&#x589E;&#x5F3A;&#x5B89;&#x5168;&#x6027;&#x548C;&#x7B80;&#x5316;&#x7F16;&#x7A0B;&#xFF0C;&#x4F7F;&#x7528;&#x8005;&#x4E0D;&#x5FC5;&#x4E86;&#x89E3;&#x5177;&#x4F53;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#xFF0C;&#x800C;&#x53EA;&#x662F;&#x8981;&#x901A;&#x8FC7;&#x63D0;&#x4F9B;&#x7ED9;&#x5916;&#x90E8;&#x8BBF;&#x95EE;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6765;&#x6709;&#x9650;&#x5236;&#x5730;&#x8BBF;&#x95EE;&#x7C7B;&#x9700;&#x8981;&#x9690;&#x85CF;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x8FD8;&#x662F;&#x4F7F;&#x7528;&#x5B66;&#x751F;&#x7684;&#x6848;&#x4F8B;&#xFF0C;&#x4F8B;&#x5982;&#x8981;&#x6C42;&#x4E00;&#x65E6;&#x5BF9;&#x5B66;&#x751F;&#x5BF9;&#x8C61;&#x7684;&#x6027;&#x522B;&#x8D4B;&#x503C;&#x4E4B;&#x540E;&#x5C31;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#xFF0C;&#x4F46;&#x5728;6.2.2&#x8282;&#x7684;TestStudent.java&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x5728;&#x8D4B;&#x503C;&#x4EE5;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x201C;&#x5B66;&#x751F;&#x5BF9;&#x8C61;&#x540D;.stuSex = 2&#x201D;&#x8BED;&#x53E5;&#xFF0C;&#x628A;&#x5B66;&#x751F;&#x5BF9;&#x8C61;&#x7684;&#x6027;&#x522B;&#x4ECE;&#x7537;&#x53D8;&#x6210;&#x5973;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x505A;&#x6CD5;&#x5C31;&#x4E0D;&#x7B26;&#x5408;&#x7A0B;&#x5E8F;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x5982;&#x4F55;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5462;&#xFF1F;</p>
+<p>&#x2003;&#x2003;&#x91C7;&#x7528;&#x5C01;&#x88C5;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x7528;private&#xFF08;&#x79C1;&#x6709;&#x7684;&#xFF09;&#x5173;&#x952E;&#x5B57;&#x53BB;&#x4FEE;&#x9970;stuSex&#x53D8;&#x91CF;&#xFF0C;&#x5176;&#x542B;&#x4E49;&#x662F;&#x4E3A;&#x628A;stuSex&#x53D8;&#x91CF;&#x5C01;&#x88C5;&#x5230;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x624D;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;stuSex&#x53D8;&#x91CF;&#xFF0C;&#x4ECE;&#x800C;&#x4FDD;&#x8BC1;&#x4E86;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4E0D;&#x80FD;&#x88AB;&#x5176;&#x4ED6;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x4FEE;&#x6539;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x505A;&#x6CD5;&#x53EA;&#x8D77;&#x5230;&#x4E86;&#x9690;&#x85CF;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x8981;&#x60F3;&#x66F4;&#x597D;&#x5730;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5BF9;&#x5916;&#x7684;public&#xFF08;&#x516C;&#x6709;&#x7684;&#xFF09;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x79C1;&#x6709;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x6240;&#x8C13;&#x826F;&#x597D;&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x5C31;&#x662F;&#x4F7F;&#x7528;private&#x5BF9;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x5C01;&#x88C5;&#xFF0C;&#x4ECE;&#x800C;&#x4FDD;&#x62A4;&#x4FE1;&#x606F;&#x7684;&#x5B89;&#x5168;&#x3002;&#x4F7F;&#x7528;public&#x4FEE;&#x9970;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5916;&#x754C;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#xFF0C;&#x901A;&#x5E38;&#x5C06;&#x8BBE;&#x7F6E;&#x79C1;&#x6709;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x548C;&#x83B7;&#x53D6;&#x79C1;&#x6709;&#x5C5E;&#x6027;&#x503C;&#x7684;&#x65B9;&#x6CD5;&#x79F0;&#x4E3A;setter&#x548C;getter&#x65B9;&#x6CD5;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x6309;&#x7167;&#x826F;&#x597D;&#x5C01;&#x88C5;&#x7684;&#x8981;&#x6C42;&#xFF0C;&#x91CD;&#x65B0;&#x7F16;&#x5199;Student&#x7C7B;&#xFF0C;&#x5176;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>public class Student 
+
+{
+
+    private String stuName;                //&#x5B66;&#x751F;&#x59D3;&#x540D;&#x2014;&#x2014;&#x79C1;&#x6709;&#x5C5E;&#x6027;
+
+    private int stuAge;                    //&#x5B66;&#x751F;&#x5E74;&#x9F84;&#x2014;&#x2014;&#x79C1;&#x6709;&#x5C5E;&#x6027;
+
+    private int stuSex;                     //&#x5B66;&#x751F;&#x6027;&#x522B;&#x2014;&#x2014;&#x79C1;&#x6709;&#x5C5E;&#x6027;
+
+    private int stuGrade;                   //&#x5B66;&#x751F;&#x5E74;&#x7EA7;&#x2014;&#x2014;&#x79C1;&#x6709;&#x5C5E;&#x6027;
+
+    public String getStuName(){         //&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x5B66;&#x751F;&#x59D3;&#x540D;
+
+    //&#x8FD9;&#x91CC;&#x7684;this&#x8868;&#x793A;&#x672C;&#x5BF9;&#x8C61;
+
+        return this.stuName;             //&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x5C5E;&#x6027;stuName
+
+    }
+
+    //&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x5B66;&#x751F;&#x59D3;&#x540D;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;
+
+    public void setStuName(String name){
+
+        this.stuName = name;
+
+    }
+
+    public int getStuAge(){                 //&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x5B66;&#x751F;&#x5E74;&#x9F84;
+
+        return this.stuAge;
+
+    }
+
+    //&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x5B66;&#x751F;&#x5E74;&#x9F84;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x5B66;&#x751F;&#x5E74;&#x9F84;
+
+    public void setStuAge(int age){
+
+        this.stuAge = age;
+
+    }       
+
+    public int getStuSex(){                  //&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x5B66;&#x751F;&#x6027;&#x522B;
+
+        return this.stuSex;
+
+    }
+
+    //&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x5B66;&#x751F;&#x6027;&#x522B;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x5B66;&#x751F;&#x6027;&#x522B;
+
+    public void setStuSex(int sex){
+
+        this.stuSex = sex;
+
+    }       
+
+    public int getStuGrade(){              //&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x5B66;&#x751F;&#x5E74;&#x7EA7;
+
+        return this.stuGrade;
+
+    }
+
+    //&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x5B66;&#x751F;&#x5E74;&#x7EA7;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x5B66;&#x751F;&#x5E74;&#x7EA7;
+
+    public void setStuGrade(int grade){
+
+        this.stuGrade = grade;
+
+    }       
+
+    //&#x5B9A;&#x4E49;&#x542C;&#x8BFE;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x76F4;&#x63A5;&#x8F93;&#x51FA;
+
+    public void learn()
+
+    {
+
+        System.out.println(stuName + &quot;&#x6B63;&#x5728;&#x8BA4;&#x771F;&#x542C;&#x8BFE;&#xFF01;&quot;);
+
+    }
+
+    //&#x5B9A;&#x4E49;&#x5199;&#x4F5C;&#x4E1A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x5165;&#x65F6;&#x95F4;&#xFF0C;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;
+
+    public String doHomework(int hour)
+
+    {
+
+        return &quot;&#x73B0;&#x5728;&#x662F;&#x5317;&#x4EAC;&#x65F6;&#x95F4;:&quot; + hour + &quot;&#x70B9;&#xFF0C;&quot; + stuName + &quot; &#x6B63;&#x5728;&#x5199;&#x4F5C;&#x4E1A;&#xFF01;&quot;;
+
+    }
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x5982;&#x679C;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x521B;&#x5EFA;Student&#x5BF9;&#x8C61;&#x5E76;&#x7ED9;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x7F16;&#x8BD1;&#x901A;&#x8FC7;&#xFF0C;&#x539F;&#x56E0;&#x662F;&#x4E0D;&#x80FD;&#x5728;&#x7C7B;&#x5916;&#x7ED9;&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;&#x4EE3;&#x7801;&#x6CE8;&#x91CA;&#x3002;</p>
+<pre><code>public class TestStudent3
+
+{
+
+    public static void main(String[] args) 
+
+    {
+
+        Student wangYun = new Student();                  //&#x521B;&#x5EFA;wangYun&#x5B66;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;
+
+        wangYun.stuName = &quot;&#x738B;&#x4E91;&quot;;                           //&#x4E0D;&#x80FD;&#x7ED9;&#x79C1;&#x6709;&#x5C5E;&#x6027;stuName&#x8D4B;&#x503C;
+
+        wangYun.stuAge = 22;                                     //&#x4E0D;&#x80FD;&#x7ED9;&#x79C1;&#x6709;&#x5C5E;&#x6027;stuAge&#x8D4B;&#x503C;
+
+        wangYun.stuSex = 1;                                        //&#x4E0D;&#x80FD;&#x7ED9;&#x79C1;&#x6709;&#x5C5E;&#x6027;stuSex&#x8D4B;&#x503C;
+
+        wangYun.stuGrade = 4;                                    //&#x4E0D;&#x80FD;&#x7ED9;&#x79C1;&#x6709;&#x5C5E;&#x6027;stuGrade&#x8D4B;&#x503C;
+
+        wangYun.learn();                                              //&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x516C;&#x6709;&#x7684;&#x5B66;&#x751F;&#x542C;&#x8BFE;&#x7684;learn()&#x65B9;&#x6CD5;
+
+        String rstString = wangYun.doHomework(22);//&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x516C;&#x6709;&#x7684;&#x5B66;&#x751F;&#x5199;&#x4F5C;&#x4E1A;&#x7684;
+
+        //doHomework(22)&#x65B9;&#x6CD5;
+
+        System.out.println(rstString);
+
+    }
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x6B63;&#x786E;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>public class TestStudent4
+
+{
+
+    public static void main(String[] args) 
+
+    {
+
+        Student wangYun = new Student();                  //&#x521B;&#x5EFA;wangYun&#x5B66;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;
+
+        wangYun.setStuName(&quot;&#x738B;&#x4E91;&quot;);                        //&#x8C03;&#x7528;&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x7ED9;stuName&#x8D4B;&#x503C;
+
+        wangYun.setStuAge(22);                                  //&#x8C03;&#x7528;&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x7ED9;stuAge&#x8D4B;&#x503C;
+
+        wangYun.setStuSex(1);                                    //&#x8C03;&#x7528;&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x7ED9;stuSex&#x8D4B;&#x503C;
+
+        wangYun.setStuGrade(4);                                 //&#x8C03;&#x7528;&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x7ED9;stuGrade&#x8D4B;&#x503C;
+
+        wangYun.learn();                                              //&#x8C03;&#x7528;&#x516C;&#x6709;&#x7684;&#x5B66;&#x751F;&#x542C;&#x8BFE;&#x7684;learn()&#x65B9;&#x6CD5;
+
+        String rstString = wangYun.doHomework(22);  //&#x8C03;&#x7528;&#x516C;&#x6709;&#x7684;&#x5B66;&#x751F;&#x5199;&#x4F5C;&#x4E1A;&#x7684;doHomework(22)&#x65B9;&#x6CD5;
+
+        System.out.println(rstString);
+
+    }
+
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="6.1类和对象概述.html" class="navigation navigation-prev " aria-label="Previous page: 6.1  类和对象概述">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.3上机任务.html" class="navigation navigation-next " aria-label="Next page: 6.3  上机任务">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.2  Java类","level":"1.7.2","depth":2,"next":{"title":"6.3  上机任务","level":"1.7.3","depth":2,"path":"chapters/d6z/6.3上机任务.md","ref":"chapters/d6z/6.3上机任务.md","articles":[]},"previous":{"title":"6.1  类和对象概述","level":"1.7.1","depth":2,"path":"chapters/d6z/6.1类和对象概述.md","ref":"chapters/d6z/6.1类和对象概述.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/d6z/6.2Java类.md","mtime":"2020-04-15T14:57:49.177Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-15T14:58:24.480Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
