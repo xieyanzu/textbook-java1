@@ -1,4 +1,4 @@
-# 使用java语言编写程序案例
+# Java程序设计基础
 
 * [第一章    初识java](chapters/d1z/d1z.md)
     - [1.1  计算机语言](chapters/d1z/1.1计算机语言.md)
