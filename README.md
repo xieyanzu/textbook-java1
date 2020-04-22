@@ -1,4 +1,4 @@
-# 使用java语言编写程序案例
+# Java程序设计基础
 
 * [目录](README.md)
 * [第一章    初识java](chapters/d1z/d1z.md)
@@ -86,4 +86,6 @@
 
 	- [10.1  排序算法](chapters/d10z/10.1排序算法.md)
 
+
 	- [10.2  本章练习](chapters/d10z/10.2本章练习.md)
+
